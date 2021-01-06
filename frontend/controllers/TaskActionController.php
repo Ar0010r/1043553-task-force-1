@@ -13,7 +13,6 @@ class TaskActionController extends SecuredController
 {
     public function actionRespond($taskId)
     {
-        //$this->enableCsrfValidation = false;
         $actionRespond = new ActionRespond($taskId);
 
         return $actionRespond->processAction();
@@ -21,7 +20,6 @@ class TaskActionController extends SecuredController
 
     public function actionAccomplish($taskId)
     {
-        //$this->enableCsrfValidation = false;
         $actionAccomplish = new ActionAccomplish($taskId);
 
         return $actionAccomplish->processAction();
